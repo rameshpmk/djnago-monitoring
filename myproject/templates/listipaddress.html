@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+
+{% block body_block %}
+
+<h1> List of IP details below </h1>
+<table>
+    <thead>
+        <tr>
+            <th>PK</th>
+            <th>IP Address</th>
+            <th>Monitoring</th>
+        </tr>
+    </thead>
+
+    <tbody>
+      {% for ip in iplist %}
+        <tr>
+            <td>{{ ip.pk }}</td>
+            <td><a href="{% url 'myapp:graph' ip.pk %}">{{ ip.address }}</a></td>
+            <td> {{ ip.monitor|yesno:"Yes,No" }}</td>
+        </tr>
+    </tbody>
+
+{% endfor %}
+
+
+
+
+{% endblock %}

@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+h1 {
+    color: red;
+}
+
+table {
+    width: 100%; /* Full width of its container */
+    border-collapse: collapse; /* Ensures borders are merged */
+}
+
+th, td {
+    border: 1px solid black; /* Solid border for cells */
+    padding: 8px; /* Space between cell content and border */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+}

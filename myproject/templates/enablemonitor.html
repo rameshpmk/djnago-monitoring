@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+
+{% block body_block %}
+
+<form method="POST">
+  <h1>Do you want to start monitoring</h1>
+
+  <a href="{% url 'myapp:monitorstartview' %}"><input type="button" class="btn btn-success" name="" value="Yes"></a>
+  <a href="{% url 'myapp:indexview' %}"><input type="button" class="btn btn-danger" name="" value="No"></a>
+</form>
+
+{% endblock %}
